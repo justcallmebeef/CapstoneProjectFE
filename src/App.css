@@ -1,0 +1,71 @@
+.welcomeContainer {
+  background-image: url("./redRock.jpeg");
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.logoImage {
+  height: 15rem;
+  width: 15rem;
+}
+
+.welcomeButtonsContainer {
+  margin-left: 10em; 
+}
+
+.logoContainer {
+  margin-left: 10em; 
+  margin: 7em; 
+}
+
+@media (max-height: 600px),
+screen and (orientation: portrait) {
+  .welcomeContainer {
+    background-image: url("./redRock.jpeg");
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+  }
+
+  .logoImage {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .logoContainer {
+    height: auto;
+    width: auto;
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+    margin: 7em; 
+  }
+
+  .welcomeButtonsContainer { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    margin: 0; 
+  }
+
+  .welcomeButton {
+    color: whitesmoke; 
+    font-size: 25px; 
+  }
+
+}

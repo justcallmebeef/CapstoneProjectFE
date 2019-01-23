@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import asendWhite from './asend-white.png'
+import asendWhite from './small-asend-white.png'
 import { Route, Link } from 'react-router-dom'
 import Welcome from './components/Welcome'
 import './App.css';
@@ -11,9 +11,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-      
       <Welcome />
-      <img src={asendWhite} alt="logo" />
       </Fragment>
     );
   }
