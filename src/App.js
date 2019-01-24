@@ -48,10 +48,10 @@ class App extends Component {
           {
             // label: 'Population', 
             data: [
-              617594,
-              181045, 
-              153060,
-              106519
+              594,
+              345, 
+              260,
+              169
             ], 
             borderColor: 'black',
             backgroundColor: [
