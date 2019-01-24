@@ -7,7 +7,7 @@ const SignUp = () => {
             <div className="logoContainer">
                 <img className="logoImage" src={asendWhite} alt="logo" />
             </div>
-            <form action="/action_page.php">
+            <form>
                 <h3 className="welcomeSignUp">Welcome to the ASEND Community!</h3>
                 <div class="input-container">
                     <i id="nameIcon" class="fa fa-user icon"></i>
