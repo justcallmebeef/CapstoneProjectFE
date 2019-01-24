@@ -8,7 +8,7 @@ const SignUp = () => {
                 <img className="logoImage" src={asendWhite} alt="logo" />
             </div>
             <form action="/action_page.php">
-                <h3>Welcome to the ASEND Community!</h3>
+                <h3 className="welcomeSignUp">Welcome to the ASEND Community!</h3>
                 <div class="input-container">
                     <i id="nameIcon" class="fa fa-user icon"></i>
                     <input class="input-field" type="text" placeholder="First Name" name="first_name"></input>
@@ -29,7 +29,7 @@ const SignUp = () => {
                     <input class="input-field" type="password" placeholder="Password" name="password"></input>
                 </div>
 
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn">Ready to ASEND it!</button>
             </form>
         </div>
     )
