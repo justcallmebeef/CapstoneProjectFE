@@ -1,5 +1,5 @@
 import React from 'react'
-import asendWhite from '../small-asend-white.png'
+import asendWhite from '../assets/small-asend-white.png'
 
 const SignUp = () => {
     return (

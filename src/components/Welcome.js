@@ -1,6 +1,6 @@
 import React from 'react' 
 import { Link } from 'react-router-dom'
-import asendWhite from '../small-asend-white.png'
+import asendWhite from '../assets/small-asend-white.png'
 
 const Welcome = () => {
     return (

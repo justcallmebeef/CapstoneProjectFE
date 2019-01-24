@@ -1,5 +1,5 @@
 import React from 'react'
-import asendWhite from '../small-asend-white.png'
+import asendWhite from '../assets/small-asend-white.png'
 
 const Login = () => {
     return (
@@ -7,7 +7,7 @@ const Login = () => {
             <div className="logoContainer">
                 <img className="logoImage" src={asendWhite} alt="logo" />
             </div>
-            <form action="/action_page.php">
+            <form>
             <h3 className="welcomeSignUp">Welcome to the ASEND Community!</h3>
                 <div class="input-container">
                     <i class="fa fa-envelope icon"></i>

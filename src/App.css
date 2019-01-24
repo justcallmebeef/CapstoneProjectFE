@@ -1,5 +1,5 @@
 .welcomeContainer {
-  background-image: url("./redRock.jpeg");
+  background-image: url("./assets/redRock.jpeg");
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -27,7 +27,7 @@
 }
 
 .loginContainer {
-  background-image: url("./redRock.jpeg");
+  background-image: url("./assets/redRock.jpeg");
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -40,7 +40,7 @@
 }
 
 .signupContainer {
-  background-image: url("./redRock.jpeg");
+  background-image: url("./assets/redRock.jpeg");
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -55,7 +55,7 @@
 @media (max-height: 600px),
 screen and (orientation: portrait) {
   .welcomeContainer {
-    background-image: url("./redRock.jpeg");
+    background-image: url("./assets/redRock.jpeg");
     position: relative;
     width: 100vw;
     height: 100vh;
