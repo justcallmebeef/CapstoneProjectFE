@@ -19,32 +19,6 @@ class App extends Component {
     }
   }
 
-  getChartData() {
-    // Ajax calls here 
-    this.setState({
-      chartData: {
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'], 
-        datasets: [
-          {
-            label: 'Population', 
-            data: [
-              617594,
-              181045, 
-              153060,
-              106519
-            ], 
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.6)',
-              'rgba(54, 162, 235, 0.6)',
-              'rgba(255, 206, 86, 0.6)',
-              'rgba(75, 192, 192, 0.6)', 
-            ]
-          }
-        ]
-      }
-    })
-  }
-
   componentWillMount() {
     this.getChartData()
   }
@@ -64,6 +38,32 @@ class App extends Component {
     fetch(routesAPI)
     .then(routes => routes.json())
     .then(routes => this.setState({ routes }))
+  }
+
+  getChartData() {
+    this.setState({
+      chartData: {
+        labels: ['July', 'August', 'September', 'December'], 
+        datasets: [
+          {
+            // label: 'Population', 
+            data: [
+              617594,
+              181045, 
+              153060,
+              106519
+            ], 
+            borderColor: 'black',
+            backgroundColor: [
+              'rgba(85, 107, 47, 0.8)',
+              // 'rgba(54, 162, 235, 0.6)',
+              // 'rgba(255, 206, 86, 0.6)',
+              // 'rgba(75, 192, 192, 0.6)', 
+            ]
+          }
+        ]
+      }
+    })
   }
 
   handleInput = (event) => {
@@ -97,7 +97,7 @@ class App extends Component {
         <Route path='/' exact component={Welcome} />
         <Route path='/signup' render={() => (<SignUp handleInput={this.handleInput} createNewClimber={this.createNewClimber} />)} />
         <Route path='/login' render={() => (<Login />)} />
-        <Route path='/climbingStats' render={() => (<ClimbingStats chartData={this.state.chartData} location="New York" />)} />
+        <Route path='/climbingStats' render={() => (<ClimbingStats chartData={this.state.chartData} year="2018" />)} />
       </Fragment>
     )
   }
