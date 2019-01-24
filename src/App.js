@@ -43,15 +43,17 @@ class App extends Component {
   getChartData() {
     this.setState({
       chartData: {
-        labels: ['July', 'August', 'September', 'December'], 
+        labels: ['June', 'July', 'August', 'September', 'December', 'January'], 
         datasets: [
           {
             // label: 'Population', 
             data: [
-              594,
+              494,
+              715, 
               345, 
-              260,
-              169
+              527,
+              169, 
+              123
             ], 
             borderColor: 'black',
             backgroundColor: [

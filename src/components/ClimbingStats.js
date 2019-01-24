@@ -24,7 +24,7 @@ class ClimbingStats extends Component {
                     options={{
                         title: {
                             display: this.props.displayTitle, 
-                            text: 'Climbs in ' + this.props.year, 
+                            text: 'Climbs over the last 6th months', 
                             fontSize: 25, 
                             fontColor: 'black'
                         }, 
@@ -55,6 +55,7 @@ class ClimbingStats extends Component {
                         }
                     }}
                 />
+                <button className="btn">Start a new climb!</button>
             </div>
         )
     }
