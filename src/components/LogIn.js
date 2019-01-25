@@ -1,5 +1,6 @@
 import React from 'react'
 import asendWhite from '../assets/small-asend-white.png'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -19,7 +20,7 @@ const Login = () => {
                     <input class="input-field" type="password" placeholder="Password" name="password"></input>
                 </div>
 
-                <button type="submit" class="btn">ASEND it!</button>
+                <Link to='/climbingStats'><button type="button" class="btn">ASEND it!</button></Link>
             </form>
         </div>
     )
