@@ -116,6 +116,12 @@ class App extends Component {
     return Math.floor(this.state.secondsElapsed / 60)
   }
 
+  handleReset = () => {
+    this.setState({
+      secondsElapsed: 0 
+    })
+  }
+
   render() {
     return (
       <Fragment>
@@ -123,7 +129,7 @@ class App extends Component {
         <Route path='/signup' render={() => (<SignUp handleInput={this.handleInput} createNewClimber={this.createNewClimber} />)} />
         <Route path='/login' render={() => (<Login />)} />
         <Route path='/climbingStats' render={() => (<ClimbingStats chartData={this.state.chartData} year="2018" />)} />
-        <Route path='/newClimb' render={() => (<NewClimb handleStart={this.handleStart} handleStop={this.handleStop} getSeconds={this.getSeconds()} getMinutes={this.getMinutes()}/>)} />
+        <Route path='/newClimb' render={() => (<NewClimb handleStart={this.handleStart} handleStop={this.handleStop} getSeconds={this.getSeconds()} getMinutes={this.getMinutes()} handleReset={this.handleReset}/>)} />
       </Fragment>
     )
   }

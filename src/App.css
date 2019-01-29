@@ -79,6 +79,23 @@
   align-items: center;
 }
 
+.stopwatchContainer {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.resetButtonContainer {
+  display: flex; 
+  justify-content: center;
+}
+
+.timeContainer {
+  display: flex; 
+  justify-content: center;
+}
+
 @media (max-height: 600px),
 screen and (orientation: portrait) {
   .welcomeContainer {
