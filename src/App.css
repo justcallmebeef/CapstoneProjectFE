@@ -65,6 +65,20 @@
   justify-content: center; 
 }
 
+.newClimbContainer {
+  background-image: url("./assets/greyRock.jpeg");
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
 @media (max-height: 600px),
 screen and (orientation: portrait) {
   .welcomeContainer {
