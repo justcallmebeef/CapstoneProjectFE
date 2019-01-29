@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import {Bar, Line, Pie} from 'react-chartjs-2'
+import { Link } from 'react-router-dom'
 
 class ClimbingStats extends Component {
     constructor(props) {
@@ -56,7 +57,7 @@ class ClimbingStats extends Component {
                     }}
                 />
                 <div className="welcomeButtonsContainer">
-                <button className="welcomeButton">Start a new climb!</button>
+                <Link to='newClimb'><button className="welcomeButton">Start a new climb!</button></Link>
                 </div>
             </div>
         )

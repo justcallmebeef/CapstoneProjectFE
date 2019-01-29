@@ -5,6 +5,7 @@ import './App.css'
 import SignUp from './components/SignUp'
 import Login from './components/Login'
 import ClimbingStats from './components/ClimbingStats'
+import NewClimb from './components/NewClimb'
 
 const climberAPI = 'https://capstone-climb-db.herokuapp.com/climbers'
 const routesAPI = 'https://capstone-climb-db.herokuapp.com/routes'
@@ -15,7 +16,8 @@ class App extends Component {
     this.state = {
       climbers: [], 
       routes: [], 
-      chartData: {}
+      chartData: {}, 
+      secondsElapsed: 0
     }
   }
 
@@ -93,6 +95,27 @@ class App extends Component {
     .then(this.loadClimbers)
   }
 
+  handleStart = () => {
+    var _this = this
+    this.incrementer = setInterval(function () {
+      _this.setState({
+        secondsElapsed: (_this.state.secondsElapsed + 1)
+      })
+    }, 1000)
+  }
+
+  handleStop = () => {
+    clearInterval(this.incrementer)
+  }
+
+  getSeconds = () => {
+    return ('0' + this.state.secondsElapsed % 60).slice(-2)
+  }
+
+  getMinutes = () => {
+    return Math.floor(this.state.secondsElapsed / 60)
+  }
+
   render() {
     return (
       <Fragment>
@@ -100,6 +123,7 @@ class App extends Component {
         <Route path='/signup' render={() => (<SignUp handleInput={this.handleInput} createNewClimber={this.createNewClimber} />)} />
         <Route path='/login' render={() => (<Login />)} />
         <Route path='/climbingStats' render={() => (<ClimbingStats chartData={this.state.chartData} year="2018" />)} />
+        <Route path='/newClimb' render={() => (<NewClimb handleStart={this.handleStart} handleStop={this.handleStop} getSeconds={this.getSeconds()} getMinutes={this.getMinutes()}/>)} />
       </Fragment>
     )
   }
