@@ -7,11 +7,12 @@ import NewClimbForm from './NewClimbForm';
 const NewClimb = (props) => {
     return (
         <div className="newClimbContainer">
-            <div className="logoContainer">
+            <div className="logoContainerNewClimb">
                 <img className="logoImage" src={asendBlack} alt="logo" />
             </div>
             <NewClimbForm />
             <Stopwatch handleStart={props.handleStart} handleStop={props.handleStop} getSeconds={props.getSeconds} getMinutes={props.getMinutes} handleReset={props.handleReset}/>
+            <button className="welcomeButton">Save Climb</button>
         </div>
     )
 }

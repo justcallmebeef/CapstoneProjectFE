@@ -46,7 +46,6 @@ const NewClimbForm = () => {
                         <option>5.15d</option>
                     </select>
                 </div>
-                <Link to='/climbingStats'><button type="button" class="btn">ASEND it!</button></Link>
             </form>
         </div>
         </Fragment>
