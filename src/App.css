@@ -91,9 +91,36 @@
   justify-content: center;
 }
 
+.buttonContainer {
+  display: flex; 
+  justify-content: center;
+}
+
 .timeContainer {
   display: flex; 
   justify-content: center;
+}
+
+.stopwatchCircle {
+  background-color: #556B2F; 
+  border-radius: 50%;
+  height: 200px; 
+  width: 200px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.timerHeader {
+  font-size: 50px;
+  margin: 0;
+  color: whitesmoke;
+}
+
+.stopwatchButton {
+  font-size: 25px; 
+  color: whitesmoke; 
 }
 
 @media (max-height: 600px),

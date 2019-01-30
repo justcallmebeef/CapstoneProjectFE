@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Bar, Line, Pie} from 'react-chartjs-2'
+import asendBlack from '../assets/small-asend-black.png'
 import { Link } from 'react-router-dom'
 
 class ClimbingStats extends Component {
@@ -20,6 +21,9 @@ class ClimbingStats extends Component {
     render() {
         return (
             <div className="chartContainer">
+            <div className="logoContainer">
+                <img className="logoImage" src={asendBlack} alt="logo" />
+            </div>
                 <Line
                     data={this.state.chartData}
                     options={{
