@@ -195,6 +195,7 @@ form {
   width: 100%;
   padding: 10px;
   outline: none;
+  border: whitesmoke;
 }
 
 .input-field:focus {
